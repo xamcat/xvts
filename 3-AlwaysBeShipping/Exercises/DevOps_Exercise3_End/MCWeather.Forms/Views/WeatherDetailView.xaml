@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage  
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:behaviors="clr-namespace:Toolbox.Forms.Behaviors;assembly=Toolbox.Forms"
+    xmlns:effects="clr-namespace:MCWeather.Forms.Effects;assembly=MCWeather.Forms"
+    xmlns:controls="clr-namespace:MCWeather.Forms.Controls;assembly=MCWeather.Forms"
+    xmlns:vm="clr-namespace:MCWeather.Common.ViewModels;assembly=MCWeather.Common"
+    x:Class="MCWeather.Forms.Views.WeatherDetailView"
+    AutomationId="WeatherDetailView">
+    
+	<ContentPage.Content>
+        <Grid RowSpacing="0"
+            ColumnSpacing="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15" />
+                <RowDefinition Height="2.5*" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="110" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="20" />
+            </Grid.ColumnDefinitions>
+            
+            <Image 
+                x:Name="WeatherImage"
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand" 
+                Aspect="AspectFill" 
+                Grid.RowSpan="6" 
+                Grid.ColumnSpan="3"
+                AutomationId="backgroundImage">
+                <Image.Behaviors>
+                    <behaviors:ImagePulseBehaviour />
+                </Image.Behaviors>
+            </Image>
+
+            <controls:Thermometer 
+                x:Name="ThermometerView"
+                Grid.Row="1"
+                Grid.Column="1" 
+                AutomationId="thermometerView"/>
+
+            <Label 
+                x:Name="DescriptionLabel"
+                TextColor="White"
+                FontSize="25"
+                HorizontalOptions="StartAndExpand" 
+                Grid.Row="2"
+                Grid.Column="1" 
+                AutomationId="descriptionLabel">
+                <Label.Effects>
+                    <effects:ShadowEffect Color="Black" />
+                </Label.Effects>
+            </Label>
+
+            <Label 
+                x:Name="CurrentTemperatureLabel"
+                TextColor="White"
+                FontSize="80"
+                HorizontalOptions="StartAndExpand" 
+                VerticalOptions="FillAndExpand"
+                VerticalTextAlignment="Center"
+                Grid.Row="3"
+                Grid.Column="1" 
+                AutomationId="currentTemperatureLabel">
+                <Label.Effects>
+                    <effects:ShadowEffect Color="Black" />
+                </Label.Effects>
+            </Label>
+
+            <Label 
+                x:Name="HighAndLowTemperatureLabel"
+                TextColor="White"
+                FontSize="25"
+                HorizontalOptions="StartAndExpand" 
+                Grid.Row="4"
+                Grid.Column="1"
+                AutomationId="highAndLowTemperatureLabel">
+                <Label.Effects>
+                    <effects:ShadowEffect Color="Black" />
+                </Label.Effects>
+            </Label>
+            
+        </Grid>
+	</ContentPage.Content>
+    
+</ContentPage >

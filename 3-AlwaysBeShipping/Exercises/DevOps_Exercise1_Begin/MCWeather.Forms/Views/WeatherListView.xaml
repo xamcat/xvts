@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:vm="clr-namespace:MCWeather.Common.ViewModels;assembly=MCWeather.Common"
+    xmlns:converters="clr-namespace:MCWeather.Forms.Converters;assembly=MCWeather.Forms"
+    xmlns:views="clr-namespace:MCWeather.Forms.Views;assembly=MCWeather.Forms"
+    Title="Weather"
+    AutomationId="WeatherListView"
+    x:Class="MCWeather.Forms.Views.WeatherListView">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="CityWeatherRequestTemplate">
+                <TextCell Text="{Binding City.Name}" TextColor="Black" />
+            </DataTemplate>
+            <DataTemplate x:Key="LocationWeatherRequestTemplate">
+                <views:LocationViewCell/>
+            </DataTemplate>
+            <converters:WeatherRequestDataTemplateSelector 
+                x:Key="WeatherRequestDataTemplateSelector"
+                CityWeatherRequestTemplate="{StaticResource CityWeatherRequestTemplate}"
+                LocationWeatherRequestTemplate="{StaticResource LocationWeatherRequestTemplate}" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+      <ToolbarItem 
+            x:Name="AddFavoriteToolbarItem"
+            Text="Add"
+            AutomationId="addFavButton"/>
+    </ContentPage.ToolbarItems>
+    
+	<ContentPage.Content>
+        <ListView 
+            x:Name="WeatherList"
+            IsPullToRefreshEnabled="true"
+            HasUnevenRows="true"
+            ItemTemplate="{StaticResource WeatherRequestDataTemplateSelector}"/>
+	</ContentPage.Content>
+    
+</ContentPage>

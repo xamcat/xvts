@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage  
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MCWeather.Forms.Views.WeatherDetailPage">
+    
+	<ContentPage.Content>
+        <Grid RowSpacing="0"
+            ColumnSpacing="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15" />
+                <RowDefinition Height="2.5*" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="110" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="20" />
+            </Grid.ColumnDefinitions>
+            
+            <Image 
+                x:Name="WeatherImage"
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand" 
+                Aspect="AspectFill" 
+                Grid.RowSpan="6" 
+                Grid.ColumnSpan="3">
+            </Image>
+
+            <Label 
+                x:Name="DescriptionLabel"
+                TextColor="White"
+                FontSize="25"
+                HorizontalOptions="StartAndExpand" 
+                Grid.Row="2"
+                Grid.Column="1" >
+            </Label>
+
+            <Label 
+                x:Name="CurrentTemperatureLabel"
+                TextColor="White"
+                FontSize="80"
+                HorizontalOptions="StartAndExpand" 
+                VerticalOptions="FillAndExpand"
+                VerticalTextAlignment="Center"
+                Grid.Row="3"
+                Grid.Column="1" >
+            </Label>
+
+            <Label 
+                x:Name="HighAndLowTemperatureLabel"
+                TextColor="White"
+                FontSize="25"
+                HorizontalOptions="StartAndExpand" 
+                Grid.Row="4"
+                Grid.Column="1">
+            </Label>
+            
+        </Grid>
+	</ContentPage.Content>
+    
+</ContentPage >

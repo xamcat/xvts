@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    Title="Weather"
+    x:Class="MCWeather.Forms.Views.WeatherListPage">
+
+    <ContentPage.ToolbarItems>
+      <ToolbarItem 
+            x:Name="AddFavoriteToolbarItem"
+            Text="Add" />
+    </ContentPage.ToolbarItems>
+    
+	<ContentPage.Content>
+        <ListView 
+            x:Name="WeatherList">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Current Location</x:String>
+                    <x:String>Bellevue</x:String>
+                    <x:String>San Francisco</x:String>
+                    <x:String>London</x:String>
+                </x:Array> 
+            </ListView.ItemsSource>
+        </ListView>
+	</ContentPage.Content>
+    
+</ContentPage>
