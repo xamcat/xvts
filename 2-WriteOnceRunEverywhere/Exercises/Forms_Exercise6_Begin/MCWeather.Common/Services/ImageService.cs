@@ -17,7 +17,7 @@ namespace MCWeather.Common.Services
         IRepositoryManager RepositoryManager => repositoryManager ?? (repositoryManager = ServiceContainer.Resolve<IRepositoryManager>());
 
         public ImageService()
-            : base("https://asapinu5ov4uzk6wu6.azurewebsites.net/")
+            : base("https://asapikjy6zobfbf6xe.azurewebsites.net/")
         {
         }
 
@@ -31,7 +31,7 @@ namespace MCWeather.Common.Services
             {
                 var remoteImage = await GetAsync<CityBackground>($"api/images/{city}", requestMessage =>
                 {
-                    requestMessage.Headers.Add("key", "148a16d1-a235-4caa-9f0d-f44f90737ad5");
+                    requestMessage.Headers.Add("key", "B50996A0-9D60-44AF-BF08-81029CE2B8C7");
                 }).ConfigureAwait(false);
                 cityBackground = new CityBackground
                 {

@@ -9,14 +9,14 @@ namespace MCWeather.Common.Services
         : BaseHttpService, IWeatherService
     {
         public WeatherService()
-            : base("https://asapinu5ov4uzk6wu6.azurewebsites.net/")
+            : base("https://asapikjy6zobfbf6xe.azurewebsites.net/")
         { }
 
         public Task<Weather> GetWeatherAsync(string city, TemperatureUnit unit = TemperatureUnit.Imperial)
         {
             return GetAsync<Weather>($"api/forecasts/{city}?units={unit.ToString().ToLower()}", requestMessage =>
             {
-                requestMessage.Headers.Add("key", "148a16d1-a235-4caa-9f0d-f44f90737ad5");
+                requestMessage.Headers.Add("key", "B50996A0-9D60-44AF-BF08-81029CE2B8C7");
             });
         }
 
