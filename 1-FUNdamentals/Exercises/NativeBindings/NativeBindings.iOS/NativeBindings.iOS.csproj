@@ -127,7 +127,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\NativeBindings\NativeBindings.csproj">
-      <Project>{11193B01-68F5-4922-8B12-C473CA06DE03}</Project>
+      <Project>{F5B5FDA2-03D2-434D-BC3F-489B2D4E013D}</Project>
       <Name>NativeBindings</Name>
     </ProjectReference>
     <ProjectReference Include="..\SvProgressHudBinding.iOS\SvProgressHudBinding.iOS.csproj">
