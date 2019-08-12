@@ -1,0 +1,33 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/astrakh/Desktop/Sources/xvts/1-FUNdamentals/Exercises/Faucet/Faucet/Faucet.csproj": {}
+  },
+  "projects": {
+    "/Users/astrakh/Desktop/Sources/xvts/1-FUNdamentals/Exercises/Faucet/Faucet/Faucet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/astrakh/Desktop/Sources/xvts/1-FUNdamentals/Exercises/Faucet/Faucet/Faucet.csproj",
+        "projectName": "Faucet",
+        "projectPath": "/Users/astrakh/Desktop/Sources/xvts/1-FUNdamentals/Exercises/Faucet/Faucet/Faucet.csproj",
+        "projectJsonPath": "/Users/astrakh/Desktop/Sources/xvts/1-FUNdamentals/Exercises/Faucet/Faucet/project.json",
+        "packagesPath": "/Users/astrakh/.nuget/packages/",
+        "projectStyle": "ProjectJson",
+        "configFilePaths": [
+          "/Users/astrakh/.config/NuGet/NuGet.Config"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nzfire.pkgs.visualstudio.com/_packaging/Mobility/nuget/v3/index.json": {}
+        }
+      },
+      "dependencies": {
+        "Microsoft.NETCore.Portable.Compatibility": "[1.0.1, )",
+        "NETStandard.Library": "[1.6.0, )"
+      },
+      "frameworks": {
+        "netstandard1.5": {}
+      }
+    }
+  }
+}
