@@ -127,34 +127,52 @@
       <HintPath>..\packages\sqlite-net-pcl.1.5.231\lib\netstandard1.1\SQLite-net.dll</HintPath>
     </Reference>
     <Reference Include="SQLitePCLRaw.core">
-      <HintPath>..\packages\SQLitePCLRaw.core.1.1.13\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+      <HintPath>..\packages\SQLitePCLRaw.core.2.0.1\lib\netstandard2.0\SQLitePCLRaw.core.dll</HintPath>
     </Reference>
     <Reference Include="SQLitePCLRaw.provider.sqlite3">
-      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.13\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
-    </Reference>
-    <Reference Include="SQLitePCLRaw.batteries_green">
-      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.13\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.14\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
     </Reference>
     <Reference Include="SQLitePCLRaw.batteries_v2">
-      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.13\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.2.0.1\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AppCenter">
-      <HintPath>..\packages\Microsoft.AppCenter.1.14.0\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AppCenter.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AppCenter.iOS.Bindings">
-      <HintPath>..\packages\Microsoft.AppCenter.1.14.0\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AppCenter.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AppCenter.Crashes">
-      <HintPath>..\packages\Microsoft.AppCenter.Crashes.1.14.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AppCenter.Crashes.iOS.Bindings">
-      <HintPath>..\packages\Microsoft.AppCenter.Crashes.1.14.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AppCenter.Analytics">
-      <HintPath>..\packages\Microsoft.AppCenter.Analytics.1.14.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings">
-      <HintPath>..\packages\Microsoft.AppCenter.Analytics.1.14.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.2.1.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly">
+      <HintPath>..\packages\Polly.7.1.1\lib\netstandard2.0\Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.dynamic_cdecl">
+      <HintPath>..\packages\SQLitePCLRaw.provider.dynamic_cdecl.2.0.1\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.nativelibrary">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.2.0.1\lib\Xamarin.iOS10\SQLitePCLRaw.nativelibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
