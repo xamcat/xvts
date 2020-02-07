@@ -14,8 +14,8 @@ using Android.Gms.Common.Apis;
 using Android.Gms.Common;
 using Android.Util;
 using Android.Gms.Location;
-using Android.Support.V4.App;
-using Android.Support.V4.Content;
+using AndroidX.Core.App;
+using AndroidX.Core.Content;
 
 namespace Toolbox.Droid.Services
 {
